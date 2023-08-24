@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400;500;600;700;800&family=Lexend+Deca:wght@400;500;600;700;800&display=swap');
+/* 
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+ */
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  margin: 0;
+}
+.container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  width: 300px;
+  height: 500px;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 51px;
+}
+p{
+  line-height: 1.7;
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-top: -87px;
+}
+.col-1{
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.col-2{
+  background-color: hsl(184, 100%, 22%);
+}
+.col-3{
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+h2{
+  font-family: 'Big Shoulders Display', cursive;
+  color: hsl(0, 0%, 95%);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-top: -35px;
+}
+button{
+  font-family: 'Lexend Deca', sans-serif;
+  border-radius: 50px;
+  border-style: none;
+  font-size: 0.9rem;
+  padding: 13px 30px;
+  background-color: hsl(0, 0%, 95%);
+  margin: 10px;
+}
+.col-1 button{
+  color: hsl(31, 77%, 52%);
+}
+.col-2 button{
+  color: hsl(184, 100%, 22%);
+}
+.col-3 button{
+  color: hsl(179, 100%, 13%);
+}
+.col-1 button:hover{
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border: 3px solid hsl(0, 0%, 95%);
+}
+.col-2 button:hover{
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border: 3px solid hsl(0, 0%, 95%);
+
+}
+.col-3 button:hover{
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border: 3px solid hsl(0, 0%, 95%);
+}
+
+@media (max-width:735px){
+  .container{
+    height: 200vh;
+    flex-direction: column;
+  }
+  .col-1{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+  .col-2{
+    background-color: hsl(184, 100%, 22%);
+  }
+  .col-3{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .card{
+    height: 400px;
+  }
+  h2{
+    margin-top: -15px;
+  }
+  p{
+    margin-top: -55px;
+  }
+}
